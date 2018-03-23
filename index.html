@@ -5,226 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>YAY</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <style>
-  body {
-    background-color: white;
-    user-select: none;
-  }
-  body, div {
-    padding: 0;
-    margin: 0;
-  }
-  div {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  #SHIRTYIMAGE {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    height: 300px;
-    width: 300px;
-    border-radius: 20px;
-  }
 
-  #eoinHome {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-  }
-
-  #SHIRTYIMAGE, #SHIRTY {
-    position: absolute;
-    top: 225px;
-    left: 245px;
-  }
-
-  #SHIRTYIMAGE {
-    z-index: 5090439734985798753948;
-  }
-
-  #hello {
-    font-family:monospace;
-    z-index: 200;
-    position: absolute;
-    font-size: 4rem;
-    font-weight: bold;
-    width: 100%;
-    text-align: center;
-    top: 115px;
-    color: lavender;
-    text-shadow: 0px 3px purple, 0px -2px lavender;
-    z-index: 5090439734985798753950;
-  }
-
-  button {
-    position: absolute;
-  }
-
-  #magic {
-   width: 66px;
-    height: 56px;
-     border-radius: 50%;
-      background-color: transparent;
-       top: 548px;
-        left: 250px;
-         position: absolute;
-          cursor: pointer;
-          z-index: 5090439734985798753950;
-  }
-
-  #magic:active {
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  #magic2 {
-   width: 66px;
-    height: 56px;
-     border-radius: 50%;
-      background-color: transparent;
-       top: 570px;
-        left: 362px;
-         position: absolute;
-          cursor: pointer;
-          z-index: 5090439734985798753950;
-  }
-
-  #magic2:active {
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  #magic3 {
-   width: 66px;
-    height: 56px;
-     border-radius: 50%;
-      background-color: transparent;
-       top: 548px;
-        left: 472px;
-         position: absolute;
-          cursor: pointer;
-          z-index: 5090439734985798753950;
-  }
-
-  #magic3:active {
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  #otherotherstripe {
-    position: relative;
-     width: 800px;
-      overflow: hidden;
-       height: 720px;
-        margin: 0 auto;
-
-  }
-
-  #cig {
-    background: linear-gradient(to right, white , wheat);
-      height: 3px;
-        width: 50px;
-          background-color: white;
-            position: absolute;
-              top: 318px;
-                left: 390px;
-                  z-index: 5090439734985798753949;
-                    transform: rotate(10deg);
-                      transform-origin: left center;
-  }
- .cig_magic{
-   box-shadow: 4px 0px darkorange;
-   animation: shrink 4s ease;
-   animation-fill-mode: forwards;
- }
-  @keyframes shrink {
-    from {
-      width: 50px;
-    }
-    to {
-      width: 0px;
-    }
-  }
-
-  #blankie {
-    position: absolute;
-    z-index: 5090439734985798753949;
-    top: 475px;
-    left: 265px;
-    transition: all 8s cubic-bezier(0.24, -0.54, 0.3, 1.48);
-  }
-
-  #eoinHome {
-    z-index: 5090439734985798753949;
-  }
-
-  .blankieOff {
-    top: 275px !important;
-  }
-  </style>
 <div id="otherotherstripe">
   <img id="SHIRTYIMAGE" src="shirtme2.png" />
   <canvas id="SHIRTY" width="300" height="300"></canvas>
-
-
   <img src="blankie.png" id="blankie" width="250"/>
-  <img id="eoinHome" src="tamo.png" style="width: 750px; height: 750px; position: absolute; top:0; left:0"/>
+  <img id="eoinHome" src="tamo.png"/>
   <h1 id="hello">Eoingotchi.</h1>
-
   <div id="magic"></div>
   <div id="magic2"></div>
   <div id="magic3"></div>
+  <div id="magic4"><img src="./startbuks.png" alt="startbuks"></div>
   <div id="cig"></div>
+  <div id="cup"><span id="coffe"></span><img src="./cup.png" alt="cup" ></div>
+  
 </div>
-
-
-  <script>
-    var magicWand = ['pAPaYAWHiP', 'PalEVIOLeTReD', 'LIGhTSALMON', 'fiREbRIcK','moCCasIN', 'FucHSIa', 'slATebLUE', 'lAWNgREen', 'daRKSeAGrEEn', 'TEal', 'paLeTURqUOIse', 'doDGERBLue', 'bISQuE', 'laVENDeRBLUsh', 'rOSYbrOWn', 'MedIUmSLaTEblUE', 'orchiD']
-    var shirty = document.getElementById("SHIRTY")
-    var linedrawingtool = shirty.getContext("2d")
-
-    document.getElementById('otherotherstripe').style.backgroundColor = otherotherstripe
-
-
-
-    var makeMagic_happen = function() {
-      var otherotherstripe = magicWand[Math.floor(Math.random() * magicWand.length)]
-      linedrawingtool.fillRect(0, 0, 300, 300)
-
-
-      linedrawingtool.fillStyle = otherotherstripe
-      var otherstripe = Math.floor((Math.random() * 20) + 5)
-      var stripe = magicWand[Math.floor(Math.random() * magicWand.length)]
-      for(i=0;i<300;i+=(otherstripe*2)){
-        linedrawingtool.beginPath()
-        linedrawingtool.strokeStyle= stripe
-        linedrawingtool.moveTo(i,0)
-        linedrawingtool.lineTo(i,300)
-        linedrawingtool.lineWidth = otherstripe
-        linedrawingtool.stroke()
-      }
-    }
-
-    makeMagic_happen()
-    makeMagic_happen()
-
-    document.getElementById('magic').addEventListener('click', makeMagic_happen)
-    document.getElementById('magic2').addEventListener('click', function(){
-      var cig = document.getElementById('cig')
-      if(document.getElementsByClassName('cig_magic').length){
-        return cig.classList.remove("cig_magic")
-      }
-      cig.style.display = "inline"
-      cig.classList.add("cig_magic")
-    })
-    document.getElementById('magic3').addEventListener('click', function(){
-      var blankie = document.getElementById('blankie')
-      blankie.classList.toggle('blankieOff')
-
-    })
-  </script>
+<script src="./main.js"></script>
 </body>
 </html>

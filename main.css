@@ -1,0 +1,239 @@
+body {
+    background-color: white;
+    user-select: none;
+  }
+  body, div {
+    padding: 0;
+    margin: 0;
+  }
+  div {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #SHIRTYIMAGE {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+  }
+
+  #eoinHome {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+  }
+
+  #SHIRTYIMAGE, #SHIRTY {
+    position: absolute;
+    top: 225px;
+    left: 245px;
+  }
+
+  #SHIRTYIMAGE {
+    z-index: 5090439734985798753948;
+  }
+
+  #hello {
+    font-family:monospace;
+    z-index: 200;
+    position: absolute;
+    font-size: 4rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    top: 115px;
+    color: lavender;
+    text-shadow: 0px 3px purple, 0px -2px lavender;
+    z-index: 5090439734985798753950;
+  }
+
+  button {
+    position: absolute;
+  }
+
+  #magic {
+   width: 66px;
+    height: 56px;
+     border-radius: 50%;
+      background-color: transparent;
+       top: 548px;
+        left: 250px;
+         position: absolute;
+          cursor: pointer;
+          z-index: 5090439734985798753950;
+  }
+
+  #magic:active {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  #magic2 {
+   width: 66px;
+    height: 56px;
+     border-radius: 50%;
+      background-color: transparent;
+       top: 570px;
+        left: 362px;
+         position: absolute;
+          cursor: pointer;
+          z-index: 5090439734985798753950;
+  }
+
+  #magic2:active {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  #magic3 {
+   width: 66px;
+    height: 56px;
+     border-radius: 50%;
+      background-color: transparent;
+       top: 548px;
+        left: 472px;
+         position: absolute;
+          cursor: pointer;
+          z-index: 5090439734985798753950;
+  }
+
+  #magic3:active {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+
+  #otherotherstripe {
+    position: relative;
+     width: 800px;
+      overflow: hidden;
+       height: 720px;
+        margin: 0 auto;
+
+  }
+  #cig {
+    background: linear-gradient(to right, white , wheat);
+      height: 3px;
+        width: 50px;
+          background-color: white;
+            position: absolute;
+              top: 318px;
+                left: 390px;
+                  z-index: 5090439734985798753949;
+                    transform: rotate(10deg);
+                      transform-origin: left center;
+  }
+ .cig_magic{
+   box-shadow: 4px 0px darkorange;
+   animation: shrink 4s ease;
+   animation-fill-mode: forwards;
+ }
+  @keyframes shrink {
+    from {
+      width: 50px;
+    }
+    to {
+      width: 0px;
+    }
+  }
+
+  #blankie {
+    position: absolute;
+    z-index: 5090439734985798753949;
+    top: 475px;
+    left: 265px;
+    transition: all 8s cubic-bezier(0.24, -0.54, 0.3, 1.48);
+  }
+
+  #eoinHome {
+    width: 750px; 
+    height: 750px; 
+    position: absolute; 
+    top:0; 
+    left:0;
+    z-index: 5090439734985798753949;
+  }
+
+  .blankieOff {
+    top: 275px !important;
+  }
+
+  #cup{display: none}
+  #cup img {
+    height: 80px;
+    width: 50px;
+    position: absolute;
+    top: 328px;
+    left: 390px;
+    z-index: 5090439734985798753949;
+    transform: rotate(-40deg);
+    transform-origin: left center;
+  }
+  #coffe  {
+    height: 33px;
+    width: 33px;
+    background: #b99965f2;
+    position: absolute;
+    top: 363px;
+    left: 411px;
+    z-index: 50904397349857987539990;
+    transform: rotate(-40deg);
+    transform-origin: left center;
+  }
+
+  .coffe{
+    animation: coofe 8s ease;
+  }
+   @keyframes coofe {
+    40% {
+        height: 33px;
+        width: 33px;
+        top: 363px;
+        left: 411px;
+    }
+    50%{
+        height: 23px;
+        top: 371px;
+        left: 414px;
+    }
+    60% {
+        height :13px;
+        top: 380px;
+        left: 417px;
+    }
+    70% {
+        height :13px;
+        top: 380px;
+        left: 417px;
+    }
+    85% {
+        height: 5px;
+        width: 28px;
+        top: 385px;
+        left: 423px;
+    }
+    100% {
+        height: 0px;
+        top: 385px;
+        left: 423px;
+    }
+    
+   }
+  #magic4 img{
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background-color: transparent;
+    top: 645px;
+    left: 362px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 5090439734985798753950;
+   }
+ 
+  /*
+
+   
+  */
